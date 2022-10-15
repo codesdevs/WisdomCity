@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".fragment.HomeFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_height="200dp"/>
+<!--            <include layout="@layout/home_services"/>-->
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/serviceRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+            <!--                    android:id="@+id/newCategoryTitleRecyclerView"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"/>-->
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+            <!--                    android:padding="20dp"-->
+            <!--                    android:id="@+id/newsListRecyclerView"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"/>-->
+            <include
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    layout="@layout/fragment_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginRight="20dp"
+              android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/cover"
+            android:layout_width="133dp"
+            android:layout_height="158dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/movie_cover"/>
+    <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬崖之上悬崖之上"
+            android:maxEms="5"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+    <Button
+            android:id="@+id/buy"
+            android:layout_gravity="center"
+            android:layout_width="80dp" android:layout_height="40dp"
+            android:text="购票"/>
+</LinearLayout>

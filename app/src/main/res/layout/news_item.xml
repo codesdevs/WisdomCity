@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp"
+              android:orientation="horizontal">
+
+    <ImageView
+            android:id="@+id/cover"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="长视频斗不过短视频的底层逻辑"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近，短视频影视号二创而产生的电影电视剧版权侵权问题引发了业内的热议。4月23日，腾讯视频、爱奇艺、优酷等视频平台联合500多位艺人，共同发布了倡议书，再次呼吁短视频平台推进版权内容合规管理，清理未经授权的内容。"
+                android:maxLines="4"
+                android:ellipsize="end"/>
+    </LinearLayout>
+</LinearLayout>

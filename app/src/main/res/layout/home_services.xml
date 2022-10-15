@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp">
+
+    <TableRow>
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+            <ImageView
+                    style="@style/homeServiceIcon"
+                    android:src="@drawable/home_services_dt"/>
+            <TextView
+                    style="@style/homeServiceText"
+                    android:text="城市地铁"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+            <ImageView
+                    style="@style/homeServiceIcon"
+                    android:src="@drawable/home_services_bus"/>
+            <TextView
+                    style="@style/homeServiceText"
+                    android:text="智慧巴士"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+            <ImageView
+                    style="@style/homeServiceIcon"
+                    android:src="@drawable/home_services_outpatient"/>
+            <TextView
+                    style="@style/homeServiceText"
+                    android:text="门诊预约"/>
+        </LinearLayout>
+
+    </TableRow>
+    <TableRow android:layout_marginTop="20dp">
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+            <ImageView
+                    style="@style/homeServiceIcon"
+                    android:src="@drawable/home_services_park"/>
+            <TextView
+                    style="@style/homeServiceText"
+                    android:text="停哪儿"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+            <ImageView
+                    style="@style/homeServiceIcon"
+                    android:src="@drawable/home_services_traffic"/>
+            <TextView
+                    style="@style/homeServiceText"
+                    android:text="智慧交管"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+            <ImageView
+                    style="@style/homeServiceIcon"
+                    android:src="@drawable/home_services_allservice"/>
+            <TextView
+                    style="@style/homeServiceText"
+                    android:text="全部服务"/>
+        </LinearLayout>
+    </TableRow>
+
+
+</TableLayout>

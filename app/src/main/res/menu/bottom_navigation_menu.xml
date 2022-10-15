@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/home"
+            android:title="首页"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/home"
+    />
+    <item
+            android:id="@+id/allService"
+            android:title="全部服务"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/all_service"/>
+    <item
+            android:id="@+id/news"
+            android:title="新闻"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/news"/>
+    <item
+            android:id="@+id/personalCenter"
+            android:title="个人中心"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/my"/>
+</menu>

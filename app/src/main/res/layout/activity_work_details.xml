@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.work.WorkDetailsActivity">
+    <include layout="@layout/activity_title"/>
+    <!--    <include layout="@layout/work_item"/>-->
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="五险一金+6k英语老师五险五险"
+                        android:maxEms="10"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                <TextView
+                        android:id="@+id/salary"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/themColor"
+                        android:textSize="20sp"
+                        android:text="5000-8000"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="大连市沙河口区中山路"
+                        android:layout_marginTop="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp"
+                               android:src="@drawable/avater"/>
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="vertical"
+                                  android:gravity="center_vertical"
+                                  android:layout_height="match_parent">
+                        <TextView
+                                android:id="@+id/contacts"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="李先生"/>
+                        <TextView
+                                android:id="@+id/companyName"
+                                android:textSize="16sp"
+                                android:gravity="bottom"
+                                android:layout_gravity="bottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:text="匿名公司"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_width="match_parent" android:layout_height="2dp"
+                           android:background="#eee"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginBottom="5dp"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_marginTop="20dp"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="职位职责"
+                              android:textColor="@color/black"
+                              android:textSize="17sp"/>
+                    <TextView
+                            android:id="@+id/obligation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="负责软件的设计开发测试以及上线"
+                            android:layout_marginTop="15sp"/>
+                    <TextView
+                            android:layout_marginTop="20dp" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="职位要求"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+                    <TextView
+                            android:id="@+id/need"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="负责软件的设计开发测试以及上线"
+                            android:layout_marginTop="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:id="@+id/sendCV"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="投递简历"
+                android:layout_gravity="bottom"/>
+    </LinearLayout>
+</LinearLayout>
