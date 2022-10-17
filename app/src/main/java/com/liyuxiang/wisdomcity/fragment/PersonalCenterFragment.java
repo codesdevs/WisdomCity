@@ -72,6 +72,7 @@ public class PersonalCenterFragment extends BaseFragment implements View.OnClick
                         logout.setVisibility(View.GONE);
                         avatar.setVisibility(View.GONE);
                         name.setVisibility(View.GONE);
+                        SPUtils.getInstance(requireContext()).remove("token");
                     }
                 }
             }
