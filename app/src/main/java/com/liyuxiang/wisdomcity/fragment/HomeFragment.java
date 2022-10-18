@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.liyuxiang.wisdomcity.activity.NewsDetailsActivity;
 import com.liyuxiang.wisdomcity.R;
+import com.liyuxiang.wisdomcity.activity.bus.BusActivity;
 import com.liyuxiang.wisdomcity.activity.metro.MetroActivity;
 import com.liyuxiang.wisdomcity.activity.movie.MovieActivity;
 import com.liyuxiang.wisdomcity.activity.parking.ParkingActivity;
@@ -126,6 +127,9 @@ public class HomeFragment extends BaseFragment {
                         break;
                     case 2:
                         jumpPage(new Intent(requireActivity(), MetroActivity.class));
+                        break;
+                    case 3:
+                        jumpPage(new Intent(requireActivity(), BusActivity.class));
                         break;
                 }
             }

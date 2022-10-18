@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.liyuxiang.wisdomcity.R;
 import com.liyuxiang.wisdomcity.api.ApiService;
+import com.liyuxiang.wisdomcity.commons.entity.WorkDetails;
 import com.liyuxiang.wisdomcity.commons.repsone.DataResponse;
 import com.liyuxiang.wisdomcity.utils.RetrofitManager;
 import retrofit2.Call;

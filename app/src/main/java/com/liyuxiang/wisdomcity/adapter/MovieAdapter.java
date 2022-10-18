@@ -56,9 +56,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
                 .error(R.drawable.loading)
                 .into(holder.cover);
         holder.name.setText(movie.getName());
-//        holder.buy.setOnClickListener(v -> {
-//            itemOnClick.onClick(movie.getId());
-//        });
+        holder.buy.setOnClickListener(v -> {
+            //如果isFilm==true那么点击的代表是正在放映
+            itemOnClick.onClick(isFilm ? 1 : 0, movie.getId());
+        });
         if (!isFilm) {
             holder.buy.setText("想看");
             holder.buy.setTextColor(Color.WHITE);
@@ -86,6 +87,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
     }
 
     public interface ItemOnClick {
-        void onClick(int id);
+        //type:0正在放映    1预告
+        void onClick(int type, int id);
     }
 }

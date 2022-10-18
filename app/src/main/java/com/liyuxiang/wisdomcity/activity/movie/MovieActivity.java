@@ -1,5 +1,6 @@
 package com.liyuxiang.wisdomcity.activity.movie;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -81,6 +82,13 @@ public class MovieActivity extends AppCompatActivity implements View.OnClickList
         getMovieBannerList();
         getHotMovieList();
         getPreviewMovieList();
+        movieAdapter.setItemOnClick(new MovieAdapter.ItemOnClick() {
+            @Override
+            public void onClick(int type, int id) {
+                int[] extra = {type, id};
+                startActivity(new Intent(MovieActivity.this, MovieDetailsActivity.class).putExtra("id", extra));
+            }
+        });
     }
 
     @Override

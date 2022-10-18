@@ -19,12 +19,31 @@
             android:usesCleartextTraffic="true"
             tools:targetApi="31">
         <activity
+                android:name=".activity.movie.MovieDetailsActivity"
+                android:exported="false"
+                android:theme="@style/Theme.NoActionBar"/>
+        <activity
+                android:name=".activity.bus.BusPayActivity"
+                android:exported="true"
+                android:theme="@style/Theme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".activity.bus.BusActivity"
+                android:exported="true"
+                android:theme="@style/Theme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".activity.metro.MetroDetailsActivity"
+                android:exported="false"
+                android:theme="@style/Theme.NoActionBar"/>
+        <activity
                 android:name=".activity.takeout.TakeOutActivity"
                 android:exported="false"/>
         <activity
                 android:name=".activity.metro.MetroActivity"
-                android:exported="false"
-                android:theme="@style/Theme.NoActionBar"/>
+                android:exported="true"
+                android:theme="@style/Theme.NoActionBar">
+        </activity>
         <activity
                 android:name=".activity.movie.MovieActivity"
                 android:exported="false"

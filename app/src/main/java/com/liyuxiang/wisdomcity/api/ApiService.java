@@ -1,17 +1,14 @@
 package com.liyuxiang.wisdomcity.api;
 
 import com.google.gson.JsonObject;
-import com.liyuxiang.wisdomcity.activity.work.WorkDetails;
 import com.liyuxiang.wisdomcity.commons.entity.*;
 import com.liyuxiang.wisdomcity.commons.repsone.*;
 
 import okhttp3.ResponseBody;
-import org.jetbrains.annotations.NotNull;
 import retrofit2.Call;
 import retrofit2.http.*;
 
 import java.util.List;
-import java.util.Map;
 
 public interface ApiService {
     @POST("/prod-api/api/register")
@@ -73,6 +70,8 @@ public interface ApiService {
 
     @GET("/prod-api/api/movie/film/list")
     Call<RowsResponse<Movie>> getHotMovieList();
+    @GET("/prod-api/api/movie/film/detail/{linesId}")
+    Call<DataResponse<MovieDetails>> getHotMovieDetails(@Path("linesId") int id);
 
     @GET("/prod-api/api/movie/film/preview/list")
     Call<RowsResponse<Movie>> getPreviewMovieList();
@@ -83,4 +82,15 @@ public interface ApiService {
     @GET("/prod-api/api/takeout/rotation/list")
     Call<RowsResponse<HomeBannerData>> getTakeOutBannerList();
 
+    @GET("/prod-api/api/metro/list")
+    Call<DataResponse<List<MetroList>>> getMetroList(@Query("currentName") String currentName);
+
+    @GET("/prod-api/api/metro/line/{id}")
+    Call<DataResponse<MetroDetails>> getMetroDetailsList(@Path("id") int id);
+
+    @GET("/prod-api/api/bus/line/list")
+    Call<RowsResponse<Bus>> getBusList();
+
+    @GET("/prod-api/api/bus/stop/list")
+    Call<RowsResponse<BusStop>> getBusStopList(@Query("linesId") int id);
 }

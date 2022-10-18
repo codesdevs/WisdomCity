@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".activity.bus.BusPayActivity">
+    <include layout="@layout/activity_title"/>
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:padding="20dp" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="上车地点："
+                          android:layout_gravity="center_vertical"
+                          android:textSize="20sp"
+                />
+                <Spinner android:id="@+id/upBus" android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="20dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="下车地点："
+                          android:layout_gravity="center_vertical"
+                          android:textSize="20sp"
+                />
+                <Spinner android:id="@+id/downBus" android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="20dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="乘客姓名："
+                          android:layout_gravity="center_vertical"
+                          android:textSize="20sp"
+                />
+                <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="李玉祥"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="17sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="20dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="乘客电话："
+                          android:layout_gravity="center_vertical"
+                          android:textSize="20sp"
+                />
+                <TextView
+                        android:id="@+id/userPhone"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="15038651933"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="17sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button android:layout_width="150dp"
+            android:id="@+id/payBtn"
+            android:layout_height="60dp"
+            android:text="提交订单"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"/>
+
+</LinearLayout>

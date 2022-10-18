@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-import com.liyuxiang.wisdomcity.activity.AllServiceFragment;
+import com.liyuxiang.wisdomcity.fragment.AllServiceFragment;
 import com.liyuxiang.wisdomcity.adapter.BottomNavFragmentViewPageAdapter;
 import com.liyuxiang.wisdomcity.fragment.*;
 import org.jetbrains.annotations.NotNull;
