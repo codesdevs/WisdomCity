@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                <ImageView android:layout_width="100dp"
+                           android:id="@+id/cover"
+                           android:scaleType="fitXY"
+                           android:layout_height="100dp"
+                           android:src="@color/cardview_dark_background"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="10dp" android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="洛阳牛肉汤"
+                          android:id="@+id/name"
+                          android:textColor="@color/black"
+                          android:textSize="20sp"/>
+
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_marginTop="5dp"
+                              android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="4.7"
+                              android:id="@+id/score"
+                              android:textColor="#FFC107"
+                              android:textSize="13sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="月售：2000"
+                              android:id="@+id/saleQuantity"
+                              android:textColor="@color/black"
+                              android:layout_marginLeft="10dp"
+                              android:textSize="13sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="距离：2000km"
+                              android:id="@+id/distance"
+                              android:textColor="@color/black"
+                              android:layout_marginLeft="10dp"
+                              android:textSize="13sp"/>
+
+                </LinearLayout>
+                <TextView android:layout_marginTop="5dp" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="人均：10"
+                          android:id="@+id/avgCost"
+                          android:textColor="@color/black"
+                          android:textSize="13sp"/>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/themColor"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingTop="2dp"
+                            android:maxEms="6"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:paddingBottom="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="用心做好饭"
+                            android:id="@+id/introduction"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

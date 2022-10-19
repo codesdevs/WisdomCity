@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 import com.liyuxiang.wisdomcity.commons.entity.*;
 import com.liyuxiang.wisdomcity.commons.repsone.*;
 
+import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.*;
@@ -70,6 +71,7 @@ public interface ApiService {
 
     @GET("/prod-api/api/movie/film/list")
     Call<RowsResponse<Movie>> getHotMovieList();
+
     @GET("/prod-api/api/movie/film/detail/{linesId}")
     Call<DataResponse<MovieDetails>> getHotMovieDetails(@Path("linesId") int id);
 
@@ -93,4 +95,24 @@ public interface ApiService {
 
     @GET("/prod-api/api/bus/stop/list")
     Call<RowsResponse<BusStop>> getBusStopList(@Query("linesId") int id);
+
+    @GET("/prod-api/api/takeout/theme/list")
+    Call<DataResponse<List<TakeOutTheme>>> getTakeOutTheme();
+
+    @GET("/prod-api/api/takeout/seller/near")
+    Call<RowsResponse<Seller>> getNearSellerList();
+
+    @GET("/prod-api/api/takeout/seller/{id}")
+    Call<DataResponse<SellerDetails>> getSellerDetails(@Path("id") int id);
+
+    @GET("/prod-api/api/takeout/collect/check")
+    @Headers({"Content-type:application/json;charset=UTF-8;", "isToken:true"})
+    Call<CollectSellerResponse> getCheckCollect(@Query("sellerId") int id);
+
+    @POST("/prod-api/api/takeout/collect")
+    @Headers({"Content-type:application/json;charset=UTF-8;", "isToken:true"})
+    Call<BaseResponse> addCollectTakeOut(@Body RequestBody body);
+    @DELETE("/prod-api/api/takeout/collect/{id}")
+    @Headers({"Content-type:application/json;charset=UTF-8;","isToken:true"})
+    Call<BaseResponse> deleteCollectTakeOut(@Path("id") int id);
 }

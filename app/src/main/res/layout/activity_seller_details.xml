@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".activity.takeout.SellerDetailsActivity">
+    <include layout="@layout/activity_title"/>
+    <androidx.cardview.widget.CardView
+            android:layout_margin="7dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+
+                    <ImageView android:layout_width="60dp"
+                               android:id="@+id/cover"
+                               android:scaleType="fitXY"
+                               android:layout_height="60dp"
+                               android:src="@color/cardview_dark_background"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical"
+                              android:layout_gravity="center_vertical"
+                              android:layout_marginLeft="10dp"
+                              android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
+
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="洛阳牛肉汤"
+                                  android:id="@+id/name"
+                                  android:textColor="@color/black"
+                                  android:textSize="20sp"/>
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text=""
+                                  android:layout_gravity="center_vertical"
+                                  android:id="@+id/collect"
+                                  android:gravity="right"
+                                  android:textSize="12sp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout android:orientation="horizontal"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="5.0"
+                                  android:layout_gravity="center_vertical"
+                                  android:id="@+id/score"
+                                  android:textColor="#FFC107"
+                                  android:textSize="13sp"/>
+                        <androidx.cardview.widget.CardView
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="start"
+                                app:cardCornerRadius="5dp"
+                                app:cardBackgroundColor="@color/themColor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            <TextView
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:paddingTop="2dp"
+                                    android:paddingBottom="2dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="用心做好饭"
+                                    android:id="@+id/introduction"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/address" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="河南省洛阳市"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

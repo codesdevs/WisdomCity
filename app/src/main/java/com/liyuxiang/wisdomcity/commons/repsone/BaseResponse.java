@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public abstract class BaseResponse {
+public class BaseResponse {
     private Integer code;
     private String msg;
     public Integer getCode() {

@@ -16,6 +16,7 @@ import com.liyuxiang.wisdomcity.commons.entity.User;
 import com.liyuxiang.wisdomcity.commons.repsone.RowsResponse;
 import com.liyuxiang.wisdomcity.commons.repsone.UserResponse;
 import com.liyuxiang.wisdomcity.utils.RetrofitManager;
+import com.liyuxiang.wisdomcity.utils.SPUtils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -113,6 +114,7 @@ public class BusPayActivity extends AppCompatActivity implements View.OnClickLis
                 } else {
                     if (response.body().getCode() == HttpURLConnection.HTTP_UNAUTHORIZED) {
                         Toast.makeText(BusPayActivity.this, "登录已失效，请重新登录", Toast.LENGTH_SHORT).show();
+                        SPUtils.getInstance(BusPayActivity.this).remove("token");
                         startActivity(new Intent(BusPayActivity.this, LoginActivity.class));
                         finish();
                     }
